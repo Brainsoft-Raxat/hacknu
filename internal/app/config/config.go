@@ -13,11 +13,11 @@ type Config struct {
 }
 
 type Postgres struct {
-	URL      string `env:"DATABASE_URL" default:"postgres://postgres:asd123+r@hacknu.chxoqp5zvixp.us-east-2.rds.amazonaws.com:5432/hacknu?sslmode=disable"`
+	URL      string `env:"DATABASE_URL" default:"postgres://postgres:12345678@hacknu.chxoqp5zvixp.us-east-2.rds.amazonaws.com:5432/postgres"`
 	Host     string `env:"POSTGRES_HOST" default:"localhost"`
 	Port     int    `env:"POSTGRES_PORT" default:"5432"`
 	User     string `env:"POSTGRES_USER" default:"postgres"`
-	Password string `env:"POSTGRES_PASS" default:"postgres"`
+	Password string `env:"POSTGRES_PASS" default:"12345678"`
 	Database string `env:"POSTGRES_DATABASE" default:"postgres"`
 	Timeout  int    `env:"POSTGRES_TIMEOUT" default:"30"`
 }
