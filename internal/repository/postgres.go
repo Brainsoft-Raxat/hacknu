@@ -2,8 +2,8 @@ package repository
 
 import (
 	"context"
-	"disease-api/internal/app/config"
 	"github.com/jackc/pgx/v4/pgxpool"
+	"hacknu/internal/app/config"
 )
 
 type postgres struct {

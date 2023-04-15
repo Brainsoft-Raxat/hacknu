@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"disease-api/internal/repository"
-	"disease-api/pkg/data"
+	"hacknu/internal/repository"
+	"hacknu/pkg/data"
 	"time"
 )
 

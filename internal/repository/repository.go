@@ -2,8 +2,8 @@ package repository
 
 import (
 	"context"
-	"disease-api/internal/app/config"
-	"disease-api/internal/app/conn"
+	"hacknu/internal/app/config"
+	"hacknu/internal/app/conn"
 )
 
 type Repository struct {

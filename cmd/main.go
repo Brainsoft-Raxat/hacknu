@@ -1,6 +1,6 @@
 package main
 
-import "disease-api/internal/app"
+import "hacknu/internal/app"
 
 func main() {
 	app.Run()

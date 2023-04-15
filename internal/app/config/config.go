@@ -13,7 +13,7 @@ type Config struct {
 }
 
 type Postgres struct {
-	URL      string `env:"DATABASE_URL" default:"postgres://postgres:postgres@localhost:5432/postgres"`
+	URL      string `env:"DATABASE_URL" default:"postgres://postgres:asd123+r@hacknu.chxoqp5zvixp.us-east-2.rds.amazonaws.com:5432/hacknu?sslmode=disable"`
 	Host     string `env:"POSTGRES_HOST" default:"localhost"`
 	Port     int    `env:"POSTGRES_PORT" default:"5432"`
 	User     string `env:"POSTGRES_USER" default:"postgres"`

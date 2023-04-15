@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"disease-api/internal/models"
-	"disease-api/pkg/data"
 	"github.com/labstack/echo/v4"
+	"hacknu/internal/models"
+	"hacknu/pkg/data"
 	"net/http"
 )
 

@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"disease-api/internal/service"
 	"github.com/labstack/echo/v4"
+	"hacknu/internal/service"
 )
 
 type handler struct {

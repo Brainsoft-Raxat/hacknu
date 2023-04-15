@@ -2,15 +2,15 @@ package app
 
 import (
 	"context"
-	"disease-api/internal/app/config"
-	"disease-api/internal/app/conn"
-	"disease-api/internal/handler"
-	"disease-api/internal/repository"
-	"disease-api/internal/repository/connection"
-	"disease-api/internal/service"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/sirupsen/logrus"
+	"hacknu/internal/app/config"
+	"hacknu/internal/app/conn"
+	"hacknu/internal/handler"
+	"hacknu/internal/repository"
+	"hacknu/internal/repository/connection"
+	"hacknu/internal/service"
 )
 
 func Run(filenames ...string) {
@@ -38,7 +38,7 @@ func Run(filenames ...string) {
 
 	ctx := context.Background()
 
-	db, _ := connection.DialPostgres(ctx, cfg.Postgres)
+	db, err := connection.DialPostgres(ctx, cfg.Postgres)
 	if err != nil {
 		logrus.Fatalf("unable to connect to postgres: %v", err)
 	}
